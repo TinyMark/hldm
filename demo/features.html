@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <!-- <link rel="stylesheet/less" href="css/index.less"> -->
+    <link rel="stylesheet" href="css/features.css">
+    <!-- <script src="js/less.js"></script> -->
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layer"></div>
+        <header class="header">
+            <a href="index.html"><i class="icon-back"></i></a>
+            <h4>专题列表</h4>
+        </header>
+        <section id="features">
+            <ul>
+                
+            </ul>
+        </section>
+    </div>
+    <script id="featuresListTmp" type="text/html">
+        {{each result as value i}}
+        <li>
+            <a href="#">
+                <img src="{{value.img}}" alt="">
+                <p>{{value.title}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="js/template.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/features.js"></script>
+</body>
+
+</html>

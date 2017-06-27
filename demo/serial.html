@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <!-- <link rel="stylesheet/less" href="css/index.less"> -->
+    <link rel="stylesheet" href="css/serial.css">
+    <!-- <script src="js/less.js"></script> -->
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layer"></div>
+        <header class="header">
+            <a href="index.html"><i class="icon-back"></i></a>
+            <h3>连载动漫</h3>
+        </header>
+        <section id="serial">
+            
+        </section>
+    </div>
+    <div class="left-menu">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#"><img src="http://www.hldm123.com/statics/tp/images/logo.png" alt=""></a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">连载动漫</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">专题列表</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">关于</a>
+            </li>
+        </ul>
+    </div>
+    <script id="serialListTmp" type="text/html">
+        {{each result as value i}}
+        <div class="media">
+            <a class="media-left" href="#">
+                <img src="{{value.img}}" alt="...">
+            </a>
+            <div class="media-body">
+                <h5 class="media-heading">{{value.name}}</h5>
+                <p>{{value.episode}}</p>
+                <p>{{value.updateTime}}</p>
+                <p>下载次数:{{value.downloadCount}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script src="js/template.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/serial.js"></script>
+</body>
+
+</html>

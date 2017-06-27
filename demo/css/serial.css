@@ -1,0 +1,14 @@
+#serial > .media {
+    padding: 10px 10px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+}
+
+#serial > .media > .media-left > img {
+    width: 100px;
+    height: 100px;
+}
+
+#serial > .media > .media-body > p {
+    margin-bottom: 5px;
+}

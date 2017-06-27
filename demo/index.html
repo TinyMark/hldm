@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <!-- <link rel="stylesheet/less" href="css/index.less"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <script src="js/less.js"></script> -->
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layer"></div>
+        <header class="header">
+            <i class="icon-menu"></i>
+            <h3>红旅动漫</h3>
+            <i class="icon-search"></i>
+        </header>
+        <section id="slide">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <!-- <img src="http://ofv795nmp.bkt.clouddn.com/lunbo1.jpg" alt=""> -->
+                        <div class="carousel-caption">
+                            红旅动漫资源分享群开放啦！！！
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cartoonList">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#cartoonTitle1" data-index="1" role="tab" data-toggle="tab">新增连载</a></li>
+                <li role="presentation"><a href="#cartoonTitle2" role="tab" data-index="2" data-toggle="tab">新增完结</a></li>
+                <li role="presentation"><a href="#cartoonTitle3" role="tab" data-index="3" data-toggle="tab">推送连载</a></li>
+                <li role="presentation"><a href="#cartoonTitle4" role="tab" data-index="4" data-toggle="tab">推荐完结</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="cartoonTitle1">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至12集</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至12集</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至12集</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至12集</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="cartoonTitle2">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至11集</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至11集</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="cartoonTitle3">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至10集</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至10集</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="cartoonTitle4">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至13集</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+                                <span>连载至13集</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="left-menu">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#"><img src="http://192.168.112.1:8888/logo.png" alt=""></a>
+            </li>
+            <li class="list-group-item">
+                <a href="serial.html">连载动漫</a>
+            </li>
+            <li class="list-group-item">
+                <a href="features.html">专题列表</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">关于</a>
+            </li>
+        </ul>
+    </div>
+    <script id="slideTmp" type="text/html">
+        {{each result as value i}}
+        <div class="item">
+            <img src="{{value.img}}" alt="">
+            <div class="carousel-caption">
+                {{value.title}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script id="cartoonListTmp" type="text/html">
+        {{each result as value i}}
+        <li>
+            <a href="">
+                <img src="{{value.img}}" alt="">
+                <span>{{value.update}}</span>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="js/template.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

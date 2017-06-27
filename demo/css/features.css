@@ -1,0 +1,13 @@
+#features > ul > li > a{
+	display: block;
+	margin: 10px 10px 0px ;
+	border-bottom: 1px solid #ccc;
+}
+#features > ul > li > a > img{
+	width: 100%;
+}
+#features > ul > li > a > p{
+	margin: 5px 0;
+	font-size: 13px;
+	color: #666;
+}

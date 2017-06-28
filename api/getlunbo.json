@@ -1,13 +1,13 @@
 [
     {
         "_id": "57fb9108843ea116a85c8a06",
-        "img": "http://192.168.112.1:8888/lunbo1.jpg",
+        "img": "http://192.168.112.5:8888/lunbo1.jpg",
         "title": "每个月都来给红旅打赏下吧",
         "url": "http://www.itcast.cn/subject/phoneweb/index.html"
     },
     {
         "_id": "57fb910d843ea116a85c8a07",
-        "img": "http://192.168.112.1:8888/lunbo2.jpg",
+        "img": "http://192.168.112.5:8888/lunbo2.jpg",
         "title": "红旅动漫资源分享群开放啦！！！",
         "url": "http://www.itcast.cn/subject/phoneweb/index.html"
     }

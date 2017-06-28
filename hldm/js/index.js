@@ -2,7 +2,7 @@
  * @Author: zhengwei
  * @Date:   2016-10-19 17:07:19
  * @Last Modified by: TinyMark
- * @Last Modified time: 2017-06-27 14:11:47
+ * @Last Modified time: 2017-06-28 14:33:21
  */
 
 'use strict';
@@ -22,7 +22,7 @@ $(function () {
     function getSlide() {
         $.ajax({
             // url: "http://139.199.192.48:9091/api/getlunbo",            
-            url: "http://192.168.112.1:8888/api/getlunbo",
+            url: "http://192.168.112.5:8888/api/getlunbo",
             success: function (data) {
                 var html = template('slideTmp', { result: data });
                 $('.carousel-inner').html(html);
@@ -39,7 +39,7 @@ $(function () {
     function getCartoonList(dom, index) {
         $.ajax({
             // url: "http://139.199.192.48:9091/api/gethometab/" + index + "",            
-            url: "http://192.168.112.1:8888/api/gethometab/" + index + "",
+            url: "http://192.168.112.5:8888/api/gethometab/" + index + "",
             success: function (data) {
                 var html = template("cartoonListTmp", { result: data });
                 $(dom).find("ul").eq(0).html(html);

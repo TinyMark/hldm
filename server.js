@@ -3,7 +3,7 @@ const fs = require('fs');
 
 var server = http.createServer(function (req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*')
-    if (req.url.slice(1, 5) == 'demo') {
+    if (req.url.slice(1, 5) == 'hldm') {
         var file_name = '.' + req.url;
     } else {
         if (req.url.slice(1, 4) == 'api') {

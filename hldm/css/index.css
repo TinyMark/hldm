@@ -19,7 +19,7 @@
     padding-left: 20px;
 }
 
-#cartoonList>.nav-tabs {}
+/*#cartoonList>.nav-tabs {}*/
 
 #cartoonList>.nav-tabs>li {
     width: 25%;
@@ -37,7 +37,14 @@
     border-radius: 0;
 }
 
-#cartoonList>.nav-tabs>li.active>a {}
+@media screen and (max-width: 320px) {
+    #cartoonList>.nav-tabs>li>a {
+        font-size: 12px;
+    }
+}
+
+
+/*#cartoonList>.nav-tabs>li.active>a {}*/
 
 #cartoonList>.tab-content>.tab-pane>ul>li {
     width: 50%;
@@ -52,23 +59,16 @@
 }
 
 #cartoonList>.tab-content>.tab-pane>ul>li>a>img {
-    /*width: 100%;*/
-    height: 100%;
+    width: 100%;
 }
 
 #cartoonList>.tab-content>.tab-pane>ul>li>a>span {
     position: absolute;
-    width: 100%;
     left: 0;
     bottom: 0;
-    height: 36px;
+    width: 100%;
     line-height: 36px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-bottom: 0;
-    padding-top: 0;
-    text-align: left;
-    padding-left: 20px;
-    margin-right: 2px;
+    background-color: rgba(0, 0, 0, .5);
     text-align: center;
     color: #fff;
     font-size: 16px;

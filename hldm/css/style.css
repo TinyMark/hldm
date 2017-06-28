@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'hldm';
-  src:  url('../fonts/hldm.eot?ti572k');
-  src:  url('../fonts/hldm.eot?ti572k#iefix') format('embedded-opentype'),
-    url('../fonts/hldm.ttf?ti572k') format('truetype'),
-    url('../fonts/hldm.woff?ti572k') format('woff'),
-    url('../fonts/hldm.svg?ti572k#hldm') format('svg');
+  src:  url('../fonts/hldm.eot');
+  src:  url('../fonts/hldm.eot') format('embedded-opentype'),
+        url('../fonts/hldm.ttf') format('truetype'),
+        url('../fonts/hldm.woff') format('woff'),
+        url('../fonts/hldm.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

@@ -19,7 +19,8 @@ var server = http.createServer(function (req, res) {
             var file_name = './imgs' + req.url;
         }
     }
-    console.log(req.connection.remoteAddress + '-----' + file_name);
+    console.log(req.connection.remoteAddress + ' ------ ' + file_name);
+
     fs.readFile(file_name, function (err, data) {
         if (err) {
             res.write('404');

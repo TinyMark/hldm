@@ -7,7 +7,7 @@ var server = http.createServer(function (req, res) {
         var file_name = '.' + req.url;
     } else {
         if (req.url.slice(1, 4) == 'api') {
-            res.setHeader('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
+            res.setHeader('Access-Control-Allow-Methods', 'POST,GET')
             res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With')
             res.setHeader('Content-Type', 'application/json;charset=utf-8')
             if (req.url.slice(5, 15) == 'gethometab') {
@@ -19,7 +19,7 @@ var server = http.createServer(function (req, res) {
             var file_name = './imgs' + req.url;
         }
     }
-    console.log(req.connection.remoteAddress + ' ------ ' + file_name);
+    console.log(new Date() + ' --- ' + req.connection.remoteAddress + ' --- ' + file_name);
 
     fs.readFile(file_name, function (err, data) {
         if (err) {

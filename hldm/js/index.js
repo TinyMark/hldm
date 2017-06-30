@@ -2,17 +2,19 @@
  * @Author: zhengwei
  * @Date:   2016-10-19 17:07:19
  * @Last Modified by: TinyMark
- * @Last Modified time: 2017-06-29 09:06:58
+ * @Last Modified time: 2017-06-30 09:41:26
  */
 
 'use strict';
 $(function () {
     $('.layer').on('click', function () {
+        $('body').css('overflow-y', 'auto');        
         $(this).toggleClass('show');
         $('.layout').css('transform', "translateX(0px)");
         $('.left-menu').css('transform', "translateX(-200px)");
     })
     $('.icon-menu').on('click', function () {
+        $('body').css('overflow-y', 'hidden');
         $('.layer').toggleClass('show');
         $('.layout').css('transform', "translateX(200px)");
         $('.left-menu').css('transform', "translateX(0px)");

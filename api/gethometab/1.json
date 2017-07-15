@@ -1,7 +1,7 @@
 [
     {
         "_id": "57fb9593843ea116a85c8a08",
-        "img": "http://192.168.112.112:8888/image10.jpg",
+        "img": "http://192.168.65.111:8888/image10.jpg",
         "name": "灵能百分百",
         "type": 1,
         "update": "连载至12集",
@@ -9,7 +9,7 @@
     },
     {
         "_id": "57fb95b2843ea116a85c8a09",
-        "img": "http://192.168.112.112:8888/image12.jpg",
+        "img": "http://192.168.65.111:8888/image12.jpg",
         "name": "B-PROJECT～鼓动＊Ambitious～",
         "type": 1,
         "update": "连载至10集",
@@ -17,7 +17,7 @@
     },
     {
         "_id": "57fb95b8843ea116a85c8a0a",
-        "img": "http://192.168.112.112:8888/image13.jpg",
+        "img": "http://192.168.65.111:8888/image13.jpg",
         "name": "发条精灵战记 天镜的极北之星",
         "type": 1,
         "update": "连载至12集",
@@ -25,7 +25,7 @@
     },
     {
         "_id": "57fb95be843ea116a85c8a0b",
-        "img": "http://192.168.112.112:8888/image14.jpg",
+        "img": "http://192.168.65.111:8888/image14.jpg",
         "name": "91天",
         "type": 1,
         "update": "连载至11集",
@@ -33,7 +33,7 @@
     },
     {
         "_id": "57fb95c7843ea116a85c8a0c",
-        "img": "http://192.168.112.112:8888/image15.jpg",
+        "img": "http://192.168.65.111:8888/image15.jpg",
         "name": "男子啦啦队!!",
         "type": 1,
         "update": "连载至12集",
@@ -41,7 +41,7 @@
     },
     {
         "_id": "57fb95cc843ea116a85c8a0d",
-        "img": "http://192.168.112.112:8888/image16.jpg",
+        "img": "http://192.168.65.111:8888/image16.jpg",
         "name": "吸血鬼仆人",
         "type": 1,
         "update": "连载至12集",
@@ -49,7 +49,7 @@
     },
     {
         "_id": "57fb95d2843ea116a85c8a0e",
-        "img": "http://192.168.112.112:8888/image17.jpg",
+        "img": "http://192.168.65.111:8888/image17.jpg",
         "name": "OZMAFIA!!",
         "type": 1,
         "update": "连载至5集",
@@ -57,7 +57,7 @@
     },
     {
         "_id": "57fb95d7843ea116a85c8a0f",
-        "img": "http://192.168.112.112:8888/image19.jpg",
+        "img": "http://192.168.65.111:8888/image19.jpg",
         "name": "代号Qualidea",
         "type": 1,
         "update": "连载至12集",
@@ -65,7 +65,7 @@
     },
     {
         "_id": "57fb95dd843ea116a85c8a10",
-        "img": "http://192.168.112.112:8888/image15.jpg",
+        "img": "http://192.168.65.111:8888/image15.jpg",
         "name": "蓝海少女",
         "type": 1,
         "update": "连载至12集",
@@ -73,7 +73,7 @@
     },
     {
         "_id": "57fb95e1843ea116a85c8a11",
-        "img": "http://192.168.112.112:8888/image14.jpg",
+        "img": "http://192.168.65.111:8888/image14.jpg",
         "name": "Regalia 三圣星",
         "type": 1,
         "update": "连载至4集",

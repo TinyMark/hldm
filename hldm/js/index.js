@@ -24,7 +24,7 @@ $(function () {
     function getSlide() {
         $.ajax({
             // url: "http://139.199.192.48:9091/api/getlunbo",            
-            url: "http://192.168.112.112:8888/api/getlunbo",
+            url: "http://192.168.65.111:8888/api/getlunbo",
             success: function (data) {
                 var html = template('slideTmp', { result: data });
                 $('.carousel-inner').html(html);
@@ -41,7 +41,7 @@ $(function () {
     function getCartoonList(dom, index) {
         $.ajax({
             // url: "http://139.199.192.48:9091/api/gethometab/" + index + "",            
-            url: "http://192.168.112.112:8888/api/gethometab/" + index + "",
+            url: "http://192.168.65.111:8888/api/gethometab/" + index + "",
             success: function (data) {
                 var html = template("cartoonListTmp", { result: data });
                 $(dom).find("ul").eq(0).html(html);

@@ -12,7 +12,7 @@ $(function () {
     function setFeatureList() {
         $.ajax({
             // url: "http://139.199.192.48:9091/api/gettopics",
-            url: "http://192.168.112.112:8888/api/gettopics",
+            url: "http://192.168.65.111:8888/api/gettopics",
             success: function (data) {
                 var html = template('featuresListTmp', { result: data });
                 $('#features > ul').html(html);
